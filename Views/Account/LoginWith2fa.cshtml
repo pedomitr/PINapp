@@ -1,0 +1,40 @@
+﻿@model LoginWith2faViewModel
+@{
+    ViewData["Title"] = Phonebook.Resources.Resources.Account_LoginWith2fa_Title;
+}
+
+<h2>@ViewData["Title"]</h2>
+<hr />
+<p>@Phonebook.Resources.Resources.Account_LoginWith2fa_Title_Msg</p>
+<div class="row">
+    <div class="col-md-4">
+        <form method="post" asp-route-returnUrl="@ViewData["ReturnUrl"]">
+            <input asp-for="RememberMe" type="hidden" />
+            <div asp-validation-summary="All" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="TwoFactorCode"></label>
+                <input asp-for="TwoFactorCode" class="form-control" autocomplete="off" />
+				<span asp-validation-for="TwoFactorCode" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <div class="checkbox">
+                    <label asp-for="RememberMachine">
+                        <input asp-for="RememberMachine" />
+                        @Phonebook.Resources.Resources.Account_LoginWith2fa_RememberMachine
+                    </label>
+                </div>
+            </div>
+            <div class="form-group">
+                <button type="submit" class="btn btn-default">@Phonebook.Resources.Resources.Layout_LogIn</button>
+            </div>
+        </form>
+    </div>
+</div>
+<p>
+    @Phonebook.Resources.Resources.Account_LoginWith2fa_Msg1_1
+	<a asp-action="LoginWithRecoveryCode" asp-route-returnUrl="@ViewData["ReturnUrl"]">@Phonebook.Resources.Resources.Account_LoginWith2fa_Msg1_2</a>.
+</p>
+
+@section Scripts {
+    @await Html.PartialAsync("_ValidationScriptsPartial")
+}

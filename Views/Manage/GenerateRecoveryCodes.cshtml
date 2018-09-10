@@ -1,0 +1,26 @@
+﻿@{
+    ViewData["Title"] = Phonebook.Resources.Resources.Manage_GenerateRecoveryCodes_Title;
+    ViewData.AddActivePage(ManageNavPages.TwoFactorAuthentication);
+}
+
+<h2>@ViewData["Title"]</h2>
+
+<div class="alert alert-warning" role="alert">
+    <p>
+        <span class="glyphicon glyphicon-warning-sign"></span>
+        <strong>@Phonebook.Resources.Resources.Manage_GenerateRecoveryCodes_Msg</strong>
+    </p>
+	<p>
+		@Phonebook.Resources.Resources.Manage_GenerateRecoveryCodes_Msg1
+	</p>
+	<p>
+		@Phonebook.Resources.Resources.Manage_GenerateRecoveryCodes_Msg2_1 <a asp-action="ResetAuthenticatorWarning">
+		@Phonebook.Resources.Resources.Manage_GenerateRecoveryCodes_Msg2_2</a>
+	</p>
+</div>
+
+<div>
+    <form asp-action="GenerateRecoveryCodes" method="post" class="form-group">
+        <button class="btn btn-danger" type="submit">@Phonebook.Resources.Resources.Btn_GenerateRecoveryCodes</button>
+    </form>
+</div>

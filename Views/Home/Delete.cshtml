@@ -1,0 +1,68 @@
+﻿@model Phonebook.Models.NewContact
+
+@{
+    ViewData["Title"] = "Delete";
+}
+
+<h2>@Phonebook.Resources.Resources.Btn_Delete</h2>
+
+<h3>@Phonebook.Resources.Resources.Delete_Msg</h3>
+<div>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Phonebook.Resources.Resources.Model_NewContact_FirstName:
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.FirstName)
+        </dd>
+		<dt>
+			@Phonebook.Resources.Resources.Model_NewContact__LastName:
+		</dt>
+        <dd>
+            @Html.DisplayFor(model => model.LastName)
+        </dd>
+		<dt>
+			@Phonebook.Resources.Resources.Model_NewContact_PhoneNumber:
+		</dt>
+        <dd>
+            @Html.DisplayFor(model => model.PhoneNumber)
+        </dd>
+		<dt>
+			@Phonebook.Resources.Resources.Model_NewContact_Email:
+		</dt>
+        <dd>
+            @Html.DisplayFor(model => model.Email)
+        </dd>
+		<dt>
+			@Phonebook.Resources.Resources.Model_NewContact_Street:
+		</dt>
+        <dd>
+            @Html.DisplayFor(model => model.Street)
+        </dd>
+		<dt>
+			@Phonebook.Resources.Resources.Model_NewContact_PostalCode:
+		</dt>
+        <dd>
+            @Html.DisplayFor(model => model.PostalCode)
+        </dd>
+		<dt>
+			@Phonebook.Resources.Resources.Model_NewContact_City:
+		</dt>
+        <dd>
+            @Html.DisplayFor(model => model.City)
+        </dd>
+		<dt>
+			@Phonebook.Resources.Resources.Model_NewContact_Country:
+		</dt>
+        <dd>
+            @Html.DisplayFor(model => model.Country)
+        </dd>
+    </dl>
+    
+    <form asp-action="Delete">
+        <input type="hidden" asp-for="ID" />
+        <input type="submit" value="@Phonebook.Resources.Resources.Btn_Delete" class="btn btn-default" /> |
+		<a asp-action="Index" class="btn btn-default" role="button">@Phonebook.Resources.Resources.Btn_BackToList</a>
+    </form>
+</div>

@@ -1,0 +1,526 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Account_AccessDenied_Msg" xml:space="preserve">
+    <value>Nemate pristup ovom resursu.</value>
+  </data>
+  <data name="Account_AccessDenied_Title" xml:space="preserve">
+    <value>Pristup odbijen.</value>
+  </data>
+  <data name="Account_ConfirmEmail_Msg" xml:space="preserve">
+    <value>Hvala vam na potvrti email-a.</value>
+  </data>
+  <data name="Account_ConfirmEmail_Title" xml:space="preserve">
+    <value>Potvrdite email</value>
+  </data>
+  <data name="Account_ExternalLogin_h4" xml:space="preserve">
+    <value>Povežite svoj {0} račun.</value>
+  </data>
+  <data name="Account_ExternalLogin_Info" xml:space="preserve">
+    <value>Uspješno ste se ovjerili sa</value>
+  </data>
+  <data name="Account_ExternalLogin_Info1" xml:space="preserve">
+    <value>Molimo da ispod unesite email adresu za ovu stranicu i kliknete  gumb "Registriraj se" za završetak prijave.</value>
+  </data>
+  <data name="Account_ForgotPasswordConfirmation_Msg" xml:space="preserve">
+    <value>Molimo da provjerite svoj email kako biste resetirali svoju lozinku.</value>
+  </data>
+  <data name="Account_ForgotPasswordConfirmation_Title" xml:space="preserve">
+    <value>Zaboravili ste postavku lozinke</value>
+  </data>
+  <data name="Account_ForgotPassword_h4" xml:space="preserve">
+    <value>Unesite svoj email.</value>
+  </data>
+  <data name="Account_ForgotPassword_Title" xml:space="preserve">
+    <value>Zaboravili ste lozinku?</value>
+  </data>
+  <data name="Account_Lockout_Msg" xml:space="preserve">
+    <value>Ovaj račun je zaključan, pokušajte ponovo kasnije.</value>
+  </data>
+  <data name="Account_Lockout_Title" xml:space="preserve">
+    <value>Izbačen</value>
+  </data>
+  <data name="Account_LoginWith2fa_Error" xml:space="preserve">
+    <value> {0} mora biti duga bar {2} znaka i najviše {1}.</value>
+  </data>
+  <data name="Account_LoginWith2fa_Label" xml:space="preserve">
+    <value>Kod autentifikatora</value>
+  </data>
+  <data name="Account_LoginWith2fa_Msg1_1" xml:space="preserve">
+    <value>Nemate pristup vašem uređaju za provjeru autentičnosti? Možete</value>
+  </data>
+  <data name="Account_LoginWith2fa_Msg1_2" xml:space="preserve">
+    <value>se prijaviti pomoću koda za oporavak</value>
+  </data>
+  <data name="Account_LoginWith2fa_RememberMachine" xml:space="preserve">
+    <value>Zapamti ovaj stroj</value>
+  </data>
+  <data name="Account_LoginWith2fa_Title" xml:space="preserve">
+    <value>Autentikacija dva čimbenika</value>
+  </data>
+  <data name="Account_LoginWith2fa_Title_Msg" xml:space="preserve">
+    <value>Vaša prijava je zaštićena aplikacijom autentifikatora. U nastavku unesite kod autentifikatora.</value>
+  </data>
+  <data name="Account_LoginWithRecoveryCode_Label" xml:space="preserve">
+    <value>Kod za oporavak</value>
+  </data>
+  <data name="Account_LoginWithRecoveryCode_Msg" xml:space="preserve">
+    <value>Zatražili ste prijavu pomoću koda za oporavak. Ova prijava neće se pamtiti sve dok ne pošaljete
+     kod aplikacije autentifikatora pri prijavi ili onemogućite 2FA i ponovno se prijavite.</value>
+  </data>
+  <data name="Account_LoginWithRecoveryCode_Title" xml:space="preserve">
+    <value>Potvrda kodova za oporavak</value>
+  </data>
+  <data name="Account_Login_Msg" xml:space="preserve">
+    <value>Prijavite se lokalnim računom.</value>
+  </data>
+  <data name="Account_Login_Msg1" xml:space="preserve">
+    <value>Registrirajte se kao novi korisnik?</value>
+  </data>
+  <data name="Account_Login_Msg2" xml:space="preserve">
+    <value>Za prijavu koristite drugu uslugu.</value>
+  </data>
+  <data name="Account_Login_Msg3_1" xml:space="preserve">
+    <value>Nema konfiguriranih vanjskih usluga provjere autentičnosti. Pogledajte</value>
+  </data>
+  <data name="Account_Login_Msg3_2" xml:space="preserve">
+    <value>pojedinosti o postavljanju ASP.NET aplikacije da biste podržali prijavu putem vanjskih usluga.</value>
+  </data>
+  <data name="Account_Login_Msg3_Link" xml:space="preserve">
+    <value>ovaj članak</value>
+  </data>
+  <data name="Account_Register_Msg" xml:space="preserve">
+    <value>Napravi novi račun.</value>
+  </data>
+  <data name="Account_Register_Title" xml:space="preserve">
+    <value>Registracija</value>
+  </data>
+  <data name="Account_ResetPasswordConfirmation_Msg1_1" xml:space="preserve">
+    <value>Vaša lozinka je restartirana. Molim</value>
+  </data>
+  <data name="Account_ResetPasswordConfirmation_Msg1_2" xml:space="preserve">
+    <value>kliknite ovdje za prijavu</value>
+  </data>
+  <data name="Account_ResetPasswordConfirmation_Title" xml:space="preserve">
+    <value>Potvrda resetiranja lozinke</value>
+  </data>
+  <data name="Account_ResetPassword_CodeErrorMsg" xml:space="preserve">
+    <value>Lozinka i lozinka za potvrdu se ne podudaraju.</value>
+  </data>
+  <data name="Account_ResetPassword_Msg" xml:space="preserve">
+    <value>Resetiraj svoju lozinku.</value>
+  </data>
+  <data name="Account_ResetPassword_Title" xml:space="preserve">
+    <value>Resetiraj lozinku</value>
+  </data>
+  <data name="Account_SignedOut_Msg" xml:space="preserve">
+    <value>Uspješno ste se odjavili.</value>
+  </data>
+  <data name="Account_SignedOut_Title" xml:space="preserve">
+    <value>Odjavljen</value>
+  </data>
+  <data name="Btn_BackToList" xml:space="preserve">
+    <value>Nazad na popis</value>
+  </data>
+  <data name="Btn_Delete" xml:space="preserve">
+    <value>Obriši</value>
+  </data>
+  <data name="Btn_Details" xml:space="preserve">
+    <value>Detalji</value>
+  </data>
+  <data name="Btn_Edit" xml:space="preserve">
+    <value>Uredi</value>
+  </data>
+  <data name="Btn_GenerateRecoveryCodes" xml:space="preserve">
+    <value>Generiraj kodove za oporavak</value>
+  </data>
+  <data name="Btn_Remove" xml:space="preserve">
+    <value>Ukloni</value>
+  </data>
+  <data name="Btn_Reset" xml:space="preserve">
+    <value>Resetiraj</value>
+  </data>
+  <data name="Btn_ResetAuthenticatorKey" xml:space="preserve">
+    <value>Resetiraj ključ za autentifikaciju</value>
+  </data>
+  <data name="Btn_ResetRecoveryCodes" xml:space="preserve">
+    <value>Resetiraj kodove za oporavak</value>
+  </data>
+  <data name="Btn_Save" xml:space="preserve">
+    <value>Spremi</value>
+  </data>
+  <data name="Btn_Submit" xml:space="preserve">
+    <value>Pošalji</value>
+  </data>
+  <data name="Btn_UpdatePassword" xml:space="preserve">
+    <value>Ažuriraj lozinku</value>
+  </data>
+  <data name="Btn_Verifiy" xml:space="preserve">
+    <value>Potvrdi</value>
+  </data>
+  <data name="Create_Title2" xml:space="preserve">
+    <value>Novi kontakt</value>
+  </data>
+  <data name="Delete_Msg" xml:space="preserve">
+    <value>Da li sigurno želite obrisati ovo?</value>
+  </data>
+  <data name="Error_Error" xml:space="preserve">
+    <value>Greška.</value>
+  </data>
+  <data name="Error_ErrorMsg" xml:space="preserve">
+    <value>Dogodila se greška tijekom provođenja vašeg zahtijeva.</value>
+  </data>
+  <data name="Home_Index_Create" xml:space="preserve">
+    <value>Stvori</value>
+  </data>
+  <data name="Home_Index_DeleteAll" xml:space="preserve">
+    <value>Obriši sve</value>
+  </data>
+  <data name="Home_Index_Search" xml:space="preserve">
+    <value>Traži</value>
+  </data>
+  <data name="Label_ConfirmPassword" xml:space="preserve">
+    <value>Potvrdi lozinku</value>
+  </data>
+  <data name="Label_NewPassword" xml:space="preserve">
+    <value>Nova lozinka</value>
+  </data>
+  <data name="Label_OldPassword" xml:space="preserve">
+    <value>Stara lozinka</value>
+  </data>
+  <data name="Label_Password" xml:space="preserve">
+    <value>Lozinka</value>
+  </data>
+  <data name="Label_RememberMe" xml:space="preserve">
+    <value>Zapamti me</value>
+  </data>
+  <data name="Label_Username" xml:space="preserve">
+    <value>Korisničko ime</value>
+  </data>
+  <data name="Label_VerificationCode" xml:space="preserve">
+    <value>Kod za potvrdu</value>
+  </data>
+  <data name="Layout_LogIn" xml:space="preserve">
+    <value>Prijava</value>
+  </data>
+  <data name="Layout_LogOut" xml:space="preserve">
+    <value>Odjava</value>
+  </data>
+  <data name="Layout_Phonebook" xml:space="preserve">
+    <value>Imenik</value>
+  </data>
+  <data name="Layout_Register" xml:space="preserve">
+    <value>Registracija</value>
+  </data>
+  <data name="Layout_Settings_Header" xml:space="preserve">
+    <value>Select language</value>
+  </data>
+  <data name="Layout_Welcome" xml:space="preserve">
+    <value>Dobrodošli {0}!</value>
+  </data>
+  <data name="Manage_ChangePassword_Title" xml:space="preserve">
+    <value>Promijeni lozinku</value>
+  </data>
+  <data name="Manage_Disable2fa_Msg" xml:space="preserve">
+    <value>Ova radnja onemogućuje samo 2FA.</value>
+  </data>
+  <data name="Manage_Disable2fa_Msg1_1" xml:space="preserve">
+    <value>Onemogućavanje 2FA ne mijenja ključeve koji se koriste u aplikacijama autentifikatora. Ako želite promijeniti ključ koji se koristi u aplikaciji autentifikatora, trebali biste</value>
+  </data>
+  <data name="Manage_Disable2fa_Msg1_2" xml:space="preserve">
+    <value>resetirati ključeve autentifikatora.</value>
+  </data>
+  <data name="Manage_Disable2fa_Msg2" xml:space="preserve">
+    <value>Onemogući 2FA</value>
+  </data>
+  <data name="Manage_Disable2fa_Title" xml:space="preserve">
+    <value>Onemogući provjere autentičnosti s dva faktora (2FA)</value>
+  </data>
+  <data name="Manage_EnableAuthenticator_Msg" xml:space="preserve">
+    <value>Da biste upotrebljavali aplikaciju za provjeru autentičnosti, prođite kroz sljedeće korake:</value>
+  </data>
+  <data name="Manage_EnableAuthenticator_Msg1_1" xml:space="preserve">
+    <value>Preuzmite aplikaciju autentifikatora s dva faktora kao što je Microsoft Authenticator</value>
+  </data>
+  <data name="Manage_EnableAuthenticator_Msg1_2" xml:space="preserve">
+    <value>Google autentifikator za</value>
+  </data>
+  <data name="Manage_EnableAuthenticator_Msg2_1" xml:space="preserve">
+    <value>Skenirajte QR kod ili unesite ovaj ključ</value>
+  </data>
+  <data name="Manage_EnableAuthenticator_Msg2_2" xml:space="preserve">
+    <value>u vašu autentifikaciju za dva faktora. Razmaci i veliko/malo slovo nisu važni.</value>
+  </data>
+  <data name="Manage_EnableAuthenticator_Msg2_3" xml:space="preserve">
+    <value>Da biste omogućili generiranje QR koda, pročitajte naše.</value>
+  </data>
+  <data name="Manage_EnableAuthenticator_Msg2_4" xml:space="preserve">
+    <value>dokumentaciju</value>
+  </data>
+  <data name="Manage_EnableAuthenticator_Msg3" xml:space="preserve">
+    <value>Nakon što skenirate QR kod ili unesete ključ iznad, vaša će aplikacija za provjeru autentičnosti faktora pružiti jedinstveni kod. Unesite kod u okvir za potvrdu u nastavku.</value>
+  </data>
+  <data name="Manage_EnableAuthenticator_Title" xml:space="preserve">
+    <value>Omogući autentifikaciju</value>
+  </data>
+  <data name="Manage_ExternalLogins_Msg" xml:space="preserve">
+    <value>Dodajte drugu uskugu za prijavu.</value>
+  </data>
+  <data name="Manage_ExternalLogins_Title" xml:space="preserve">
+    <value>Upravljajte vanjskim prijavama</value>
+  </data>
+  <data name="Manage_GenerateRecoveryCodes_Msg" xml:space="preserve">
+    <value>Ova radnja generira nove kodove za oporavak.</value>
+  </data>
+  <data name="Manage_GenerateRecoveryCodes_Msg1" xml:space="preserve">
+    <value>Ako izgubite uređaj i nemate kodove oporavka, izgubit ćete pristup računu.</value>
+  </data>
+  <data name="Manage_GenerateRecoveryCodes_Msg2_1" xml:space="preserve">
+    <value>Generiranje novih kodova za oporavak ne mijenja ključeve koji se upotrebljavaju u aplikacijama za provjeru autentičnosti. Ako želite promijeniti ključ koji se koristi u aplikaciji autentifikatora, trebali biste</value>
+  </data>
+  <data name="Manage_GenerateRecoveryCodes_Msg2_2" xml:space="preserve">
+    <value>resetirati ključeve autentifikatora.</value>
+  </data>
+  <data name="Manage_GenerateRecoveryCodes_Title" xml:space="preserve">
+    <value>Generirajte popis kodova za oporavak od dva faktora (2FA)</value>
+  </data>
+  <data name="Manage_Index_Msg" xml:space="preserve">
+    <value>Pošaljite email za potvrdu</value>
+  </data>
+  <data name="Manage_Index_Title" xml:space="preserve">
+    <value>Profil</value>
+  </data>
+  <data name="Manage_Layout_Msg" xml:space="preserve">
+    <value>Upravljajte svojim računom</value>
+  </data>
+  <data name="Manage_Layout_Msg1" xml:space="preserve">
+    <value>Promijenite postavke računa</value>
+  </data>
+  <data name="Manage_ManageNav_ExternalLogins" xml:space="preserve">
+    <value>Vanjske prijave</value>
+  </data>
+  <data name="Manage_ManageNav_Msg" xml:space="preserve">
+    <value>Dvo faktorna autentifikacija</value>
+  </data>
+  <data name="Manage_ManageNav_Profile" xml:space="preserve">
+    <value>Profil</value>
+  </data>
+  <data name="Manage_ResetAuthenticator_Msg" xml:space="preserve">
+    <value>Ako poništite ključ autentifikatora, aplikacija autentifikatora neće raditi dok ga ne rekonfigurirate.</value>
+  </data>
+  <data name="Manage_ResetAuthenticator_Msg1" xml:space="preserve">
+    <value>Taj postupak onemogućuje aplikaciju 2FA dok ne potvrdite aplikaciju autentifikatora i vratit ćete i kodove oporavka 2FA. Ako ne dovršite konfiguraciju aplikacije autentifikatora, možete izgubiti pristup računu.</value>
+  </data>
+  <data name="Manage_ResetAuthenticator_Title" xml:space="preserve">
+    <value>Resetiraj ključ autentifikatora</value>
+  </data>
+  <data name="Manage_SetPassword_Msg" xml:space="preserve">
+    <value>Nemate lokalno korisničko ime / zaporku za ovu web stranicu. Dodajte lokalni račun kako biste se mogli prijaviti bez vanjske prijave.</value>
+  </data>
+  <data name="Manage_SetPassword_Title" xml:space="preserve">
+    <value>Postavi lozinku</value>
+  </data>
+  <data name="Manage_ShowRecoveryCodes_Msg" xml:space="preserve">
+    <value>Stavite ove kodove na sigurno mjesto.</value>
+  </data>
+  <data name="Manage_ShowRecoveryCodes_Msg1" xml:space="preserve">
+    <value>Ako izgubite uređaj i nemate kodove oporavka, izgubit ćete pristup računu.</value>
+  </data>
+  <data name="Manage_ShowRecoveryCodes_Title" xml:space="preserve">
+    <value>Kodovi za oporavak</value>
+  </data>
+  <data name="Manage_TwoFactorAuthentication_Msg" xml:space="preserve">
+    <value>Nemate preostalih kodova za oporavak</value>
+  </data>
+  <data name="Manage_TwoFactorAuthentication_Msg1_1" xml:space="preserve">
+    <value>Morate</value>
+  </data>
+  <data name="Manage_TwoFactorAuthentication_Msg1_2" xml:space="preserve">
+    <value>generirati novi set kodova za oporavak</value>
+  </data>
+  <data name="Manage_TwoFactorAuthentication_Msg1_3" xml:space="preserve">
+    <value>prije prijave s kodom za oporavak.</value>
+  </data>
+  <data name="Manage_TwoFactorAuthentication_Msg2_1" xml:space="preserve">
+    <value>Preostao vam je 1 kod za oporavak</value>
+  </data>
+  <data name="Manage_TwoFactorAuthentication_Msg2_2" xml:space="preserve">
+    <value>Možete</value>
+  </data>
+  <data name="Manage_TwoFactorAuthentication_Msg3_1" xml:space="preserve">
+    <value>Preostalo vam je {0} kodova za oporavak.</value>
+  </data>
+  <data name="Manage_TwoFactorAuthentication_Msg3_2" xml:space="preserve">
+    <value>Trebate</value>
+  </data>
+  <data name="Manage_TwoFactorAuthentication_Msg4" xml:space="preserve">
+    <value>Dodati aplikaciju za autentifikaciju</value>
+  </data>
+  <data name="Manage_TwoFactorAuthentication_Msg5" xml:space="preserve">
+    <value>Konfiguriranje aplikacije autentifikatora</value>
+  </data>
+  <data name="Manage_TwoFactorAuthentication_Msg6" xml:space="preserve">
+    <value>Resetiraj autentifikacijski ključ</value>
+  </data>
+  <data name="Manage_TwoFactorAuthentication_Title" xml:space="preserve">
+    <value>Dvo-faktorna autentifikacija</value>
+  </data>
+  <data name="Model_NewContact_City" xml:space="preserve">
+    <value>Grad</value>
+  </data>
+  <data name="Model_NewContact_Country" xml:space="preserve">
+    <value>Država</value>
+  </data>
+  <data name="Model_NewContact_Email" xml:space="preserve">
+    <value>Email</value>
+  </data>
+  <data name="Model_NewContact_FirstName" xml:space="preserve">
+    <value>Ime</value>
+  </data>
+  <data name="Model_NewContact_PhoneNumber" xml:space="preserve">
+    <value>Broj telefona</value>
+  </data>
+  <data name="Model_NewContact_PostalCode" xml:space="preserve">
+    <value>Poštanski broj</value>
+  </data>
+  <data name="Model_NewContact_Street" xml:space="preserve">
+    <value>Ulica</value>
+  </data>
+  <data name="Model_NewContact__LastName" xml:space="preserve">
+    <value>Prezime</value>
+  </data>
+  <data name="Text_and" xml:space="preserve">
+    <value>i</value>
+  </data>
+  <data name="Text_Android" xml:space="preserve">
+    <value>Android</value>
+  </data>
+  <data name="Text_iOS" xml:space="preserve">
+    <value>iOS</value>
+  </data>
+  <data name="Text_or" xml:space="preserve">
+    <value>ili</value>
+  </data>
+  <data name="Text_WindowsPhone" xml:space="preserve">
+    <value>WindowsPhone</value>
+  </data>
+  <data name="Manage_TwoFactorAuthentication_Msg7" xml:space="preserve">
+    <value>Autenitifikatorska aplikacija</value>
+  </data>
+</root>

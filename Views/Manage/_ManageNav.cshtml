@@ -1,0 +1,16 @@
+﻿@using Phonebook.Views.Manage
+@inject SignInManager<ApplicationUser> SignInManager
+@{
+    var hasExternalLogins = (await SignInManager.GetExternalAuthenticationSchemesAsync()).Any();
+}
+
+<ul class="nav nav-pills nav-stacked manageAcc">
+    <li class="@ManageNavPages.IndexNavClass(ViewContext)"><a asp-action="Index" >@Phonebook.Resources.Resources.Manage_ManageNav_Profile</a></li>
+    <li class="@ManageNavPages.ChangePasswordNavClass(ViewContext)"><a asp-action="ChangePassword">@Phonebook.Resources.Resources.Label_Password</a></li>
+    @if (hasExternalLogins)
+    {
+        <li class="@ManageNavPages.ExternalLoginsNavClass(ViewContext)"><a asp-action="ExternalLogins">@Phonebook.Resources.Resources.Manage_ManageNav_ExternalLogins</a></li>
+    }
+    <li class="@ManageNavPages.TwoFactorAuthenticationNavClass(ViewContext)"><a asp-action="TwoFactorAuthentication">@Phonebook.Resources.Resources.Manage_ManageNav_Msg</a></li>
+</ul>
+

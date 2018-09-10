@@ -1,0 +1,56 @@
+﻿@model IEnumerable<Phonebook.Models.NewContact>
+
+
+@{
+	ViewData["Title"] = "Index";
+}
+
+<h2>@ViewData["Contacts"]</h2>
+
+<div>
+	<a asp-action="Create" class="btn btn-default pull-left" role="button">@Phonebook.Resources.Resources.Home_Index_Create </a> 
+	<a asp-action="DeleteAll" class="btn btn-default pull-left" role="button">@Phonebook.Resources.Resources.Home_Index_DeleteAll</a>
+	<div>
+	<form method="get" class="pull-right">
+		<input type="search" name="searchTerm" class="form-control search-field" />
+		<input type="submit" value="@Phonebook.Resources.Resources.Home_Index_Search" class="btn btn-default search-btn pull-right" />
+	</form>
+	</div>
+</div>
+<table class="table">
+	<thead>
+		<tr>
+			<th>
+				@Phonebook.Resources.Resources.Model_NewContact_FirstName
+			</th>
+			<th>
+				@Phonebook.Resources.Resources.Model_NewContact__LastName
+			</th>
+			<th>
+				@Phonebook.Resources.Resources.Model_NewContact_PhoneNumber
+			</th>
+			<th></th>
+		</tr>
+	</thead>
+	<tbody>
+		@foreach (var item in Model)
+		{
+			<tr>
+				<td>
+					@Html.DisplayFor(modelItem => item.FirstName)
+				</td>
+				<td>
+					@Html.DisplayFor(modelItem => item.LastName)
+				</td>
+				<td>
+					@Html.DisplayFor(modelItem => item.PhoneNumber)
+				</td>
+				<td class="text-right">
+					<a asp-action="Edit" asp-route-id="@item.ID" class="btn btn-default" role="button">@Phonebook.Resources.Resources.Btn_Edit</a> |
+					<a asp-action="Details" asp-route-id="@item.ID" class="btn btn-default" role="button">@Phonebook.Resources.Resources.Btn_Details</a> |
+					<a asp-action="Delete" asp-route-id="@item.ID" class="btn btn-default" role="button">@Phonebook.Resources.Resources.Btn_Delete</a>
+				</td>
+			</tr>
+		}
+	</tbody>
+</table>

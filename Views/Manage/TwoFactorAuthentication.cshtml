@@ -1,0 +1,49 @@
+@model TwoFactorAuthenticationViewModel
+@{
+    ViewData["Title"] = Phonebook.Resources.Resources.Manage_TwoFactorAuthentication_Title;
+    ViewData.AddActivePage(ManageNavPages.TwoFactorAuthentication);
+}
+
+<h4>@ViewData["Title"]</h4>
+@if (Model.Is2faEnabled)
+{
+    if (Model.RecoveryCodesLeft == 0)
+    {
+        <div class="alert alert-danger">
+            <strong>@Phonebook.Resources.Resources.Manage_TwoFactorAuthentication_Msg</strong>
+			<p>@Phonebook.Resources.Resources.Manage_TwoFactorAuthentication_Msg1_1 <a asp-action="GenerateRecoveryCodes">@Phonebook.Resources.Resources.Manage_TwoFactorAuthentication_Msg1_2</a> @Phonebook.Resources.Resources.Manage_TwoFactorAuthentication_Msg1_3</p>
+        </div>
+    }
+    else if (Model.RecoveryCodesLeft == 1)
+    {
+        <div class="alert alert-danger">
+			<strong>@Phonebook.Resources.Resources.Manage_TwoFactorAuthentication_Msg2_1</strong>
+			<p>@Phonebook.Resources.Resources.Manage_TwoFactorAuthentication_Msg2_2 <a asp-action="GenerateRecoveryCodes">@Phonebook.Resources.Resources.Manage_TwoFactorAuthentication_Msg1_2</a>.</p>
+        </div>
+    }
+    else if (Model.RecoveryCodesLeft <= 3)
+    {
+        <div class="alert alert-warning">
+            <strong>@string.Format(Phonebook.Resources.Resources.Manage_TwoFactorAuthentication_Msg3_1, Model.RecoveryCodesLeft)</strong>
+            <p>@Phonebook.Resources.Resources.Manage_TwoFactorAuthentication_Msg3_2 <a asp-action="GenerateRecoveryCodes">@Phonebook.Resources.Resources.Manage_TwoFactorAuthentication_Msg1_2</a>.</p>
+        </div>
+    }
+
+    <a asp-action="Disable2faWarning" class="btn btn-default">Disable 2FA</a>
+    <a asp-action="GenerateRecoveryCodesWarning" class="btn btn-default">@Phonebook.Resources.Resources.Btn_ResetRecoveryCodes</a>
+}
+
+<h5>@Phonebook.Resources.Resources.Manage_TwoFactorAuthentication_Msg7</h5>
+@if (!Model.HasAuthenticator)
+{
+    <a asp-action="EnableAuthenticator" class="btn btn-default">@Phonebook.Resources.Resources.Manage_TwoFactorAuthentication_Msg4</a>
+}
+else
+{
+	<a asp-action="EnableAuthenticator" class="btn btn-default">@Phonebook.Resources.Resources.Manage_TwoFactorAuthentication_Msg5</a>
+	<a asp-action="ResetAuthenticatorWarning" class="btn btn-default">@Phonebook.Resources.Resources.Manage_TwoFactorAuthentication_Msg6</a>
+}
+
+@section Scripts {
+    @await Html.PartialAsync("_ValidationScriptsPartial")
+}

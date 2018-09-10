@@ -1,0 +1,52 @@
+﻿@model EnableAuthenticatorViewModel
+@{
+    ViewData["Title"] = Phonebook.Resources.Resources.Manage_EnableAuthenticator_Title;
+    ViewData.AddActivePage(ManageNavPages.TwoFactorAuthentication);
+}
+
+<h4>@ViewData["Title"]</h4>
+<div>
+    <p>@Phonebook.Resources.Resources.Manage_EnableAuthenticator_Msg</p>
+    <ol class="list">
+        <li>
+			<p>
+				@Phonebook.Resources.Resources.Manage_EnableAuthenticator_Msg1_1
+				<a href="https://go.microsoft.com/fwlink/?Linkid=825071">@Phonebook.Resources.Resources.Text_WindowsPhone</a>,
+				<a href="https://go.microsoft.com/fwlink/?Linkid=825072">@Phonebook.Resources.Resources.Text_Android</a> @Phonebook.Resources.Resources.Text_and
+				<a href="https://go.microsoft.com/fwlink/?Linkid=825073">@Phonebook.Resources.Resources.Text_iOS</a> @Phonebook.Resources.Resources.Text_or
+				@Phonebook.Resources.Resources.Manage_EnableAuthenticator_Msg1_2
+				<a href="https://play.google.com/store/apps/details?id=com.google.android.apps.authenticator2&amp;hl=en">Android</a> @Phonebook.Resources.Resources.Text_and
+				<a href="https://itunes.apple.com/us/app/google-authenticator/id388497605?mt=8">@Phonebook.Resources.Resources.Text_iOS</a>.
+			</p>
+        </li>
+        <li>
+			<p>@Phonebook.Resources.Resources.Manage_EnableAuthenticator_Msg2_1 <kbd>@Model.SharedKey</kbd> @Phonebook.Resources.Resources.Manage_EnableAuthenticator_Msg2_2</p>
+			<div class="alert alert-info">@Phonebook.Resources.Resources.Manage_EnableAuthenticator_Msg2_3 <a href="https://go.microsoft.com/fwlink/?Linkid=852423">
+				@Phonebook.Resources.Resources.Manage_EnableAuthenticator_Msg2_4</a>.</div>
+            <div id="qrCode"></div>
+            <div id="qrCodeData" data-url="@Model.AuthenticatorUri"></div>
+        </li>
+        <li>
+            <p>
+                @Phonebook.Resources.Resources.Manage_EnableAuthenticator_Msg3
+            </p>
+            <div class="row">
+                <div class="col-md-6">
+                    <form method="post">
+                        <div class="form-group">
+                            <label asp-for="Code" class="control-label">@Phonebook.Resources.Resources.Label_VerificationCode</label>
+                            <input asp-for="Code" class="form-control" autocomplete="off" />
+                            <span asp-validation-for="Code" class="text-danger"></span>
+                        </div>
+                        <button type="submit" class="btn btn-default">@Phonebook.Resources.Resources.Btn_Verifiy</button>
+                        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                    </form>
+                </div>
+            </div>
+        </li>
+    </ol>
+</div>
+
+@section Scripts {
+    @await Html.PartialAsync("_ValidationScriptsPartial")
+}
